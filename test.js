@@ -14,5 +14,8 @@ describe(('cálculo del peso'),()=>{
   it('carrito  vacio',()=>{equal(calcularPeso([]),0)});
   it('peso pan',()=>{equal(calcularPeso([{producto:"pan",peso:80}]),80)})
   it('peso pan',()=>{equal(calcularPeso([{producto:"pan",peso:80, cantidad:2}]),160)})
+  it('pan y leche', () =>{equal(calcularPeso([
+    {producto:"pan",peso:80, cantidad:2},
+  {producto:"leche",peso:500,cantidad:2}]),1160)});
  
 })
